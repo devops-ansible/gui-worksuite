@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e
+
+echo "root:$ROOT_PASSWORD" | chpasswd
+echo "ubuntu:$ROOT_PASSWORD" | chpasswd
+
+
+sleep 5
+exit 0
